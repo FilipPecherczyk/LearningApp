@@ -1,0 +1,71 @@
+﻿<Page x:Class="LearningIncreaser.Pisownia"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LearningIncreaser"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="800"
+      Title="Pisownia">
+
+    <Grid Background="#2DA2EC">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="DrawnWordBlock" TextAlignment="Center" Margin="10,100,10,10"
+                   Grid.ColumnSpan="2" Grid.Row="0"
+                   FontSize="65" FontWeight="SemiBold"/>
+
+        <TextBox x:Name="UserAnswer" Grid.Row="1" Grid.ColumnSpan="2" Margin="60,40,60,80"
+                 FontSize="40" TextAlignment="Center"
+                 BorderBrush="#343F71" BorderThickness="3" Background="Beige"/>
+
+        <Button x:Name="CheckAnswerButton" Content="Sprawdź" Click="CheckAnswerButton_Click"
+                FontSize="30" FontWeight="SemiBold"
+                Grid.Row="2" Grid.Column="1" Margin="75,0,100,170"
+                BorderBrush="#1D4CB0" BorderThickness="3" Background="Beige"/>
+
+        <Grid Grid.Row="2" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="SurrenderButton" Click="SurrenderButton_Click"
+                    Grid.Column="0" Margin="20,0,10,170"
+                    Background="#2DA2EC" BorderThickness="0">
+                <Button.ToolTip>
+                    <ToolTip Content="Tłumaczenie"/>
+                </Button.ToolTip>
+                <Image Source="C:\c#\LearningIncreaser\LearningIncreaser\whiteFlag.png"/>
+            </Button>
+
+            <Button x:Name="LengthButton" Click="LengthButton_Click"
+                    Grid.Column="1" Margin="20,0,10,170"
+                    Background="#2DA2EC" BorderThickness="0">
+                <Button.ToolTip>
+                    <ToolTip Content="Długość wyrazu"/>
+                </Button.ToolTip>
+                <Image Source="C:\c#\LearningIncreaser\LearningIncreaser\line.png"/>
+            </Button>
+
+            <Button x:Name="LetterButton" Click="LetterButton_Click"
+                    Grid.Column="2" Margin="20,0,10,170"
+                    Background="#2DA2EC" BorderThickness="0">
+                <Button.ToolTip>
+                    <ToolTip Content="Pierwsza litera"/>
+                </Button.ToolTip>
+                <Image Source="C:\c#\LearningIncreaser\LearningIncreaser\letter.png"/>
+            </Button>
+        </Grid>
+
+    </Grid>
+</Page>
