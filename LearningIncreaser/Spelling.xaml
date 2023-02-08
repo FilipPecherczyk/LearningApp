@@ -40,30 +40,36 @@
             </Grid.ColumnDefinitions>
 
             <Button x:Name="SurrenderButton" Click="SurrenderButton_Click"
+                    Content="Surr" FontSize="30" FontWeight="Bold"
                     Grid.Column="0" Margin="20,0,10,170"
-                    Background="#2DA2EC" BorderThickness="0">
+                    Background="Beige" FontFamily="Britannic Bold"
+                    BorderBrush="Red" BorderThickness="3" Foreground="Orange">
                 <Button.ToolTip>
                     <ToolTip Content="Tłumaczenie"/>
                 </Button.ToolTip>
-                <Image Source="C:\c#\LearningIncreaser\LearningIncreaser\whiteFlag.png"/>
+                <!--<Image Source="C:\c#\LearningIncreaser\LearningIncreaser\whiteFlag.png"/>-->
             </Button>
 
             <Button x:Name="LengthButton" Click="LengthButton_Click"
+                    Content="Length" FontSize="30" FontWeight="Bold"
                     Grid.Column="1" Margin="20,0,10,170"
-                    Background="#2DA2EC" BorderThickness="0">
+                    Background="Beige" FontFamily="Britannic Bold"
+                    BorderBrush="Orange" BorderThickness="3" Foreground="Green">
                 <Button.ToolTip>
                     <ToolTip Content="Długość wyrazu"/>
                 </Button.ToolTip>
-                <Image Source="C:\c#\LearningIncreaser\LearningIncreaser\line.png"/>
+                <!--<Image Source="C:\c#\LearningIncreaser\LearningIncreaser\line.png"/>-->
             </Button>
 
             <Button x:Name="LetterButton" Click="LetterButton_Click"
+                    Content="1st" FontSize="50" FontWeight="SemiBold"
                     Grid.Column="2" Margin="20,0,10,170"
-                    Background="#2DA2EC" BorderThickness="0">
+                    Background="Beige" FontFamily="Britannic Bold"
+                    BorderBrush="Green" BorderThickness="3" Foreground="Red">
                 <Button.ToolTip>
                     <ToolTip Content="Pierwsza litera"/>
                 </Button.ToolTip>
-                <Image Source="C:\c#\LearningIncreaser\LearningIncreaser\letter.png"/>
+                <!--<Image Source="C:\c#\LearningIncreaser\LearningIncreaser\letter.png"/>-->
             </Button>
         </Grid>
 

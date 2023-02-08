@@ -77,11 +77,10 @@
                        Text="Długość Pseudonimu musi być większa niż 1 oraz mniejsza niż 16" 
                        Margin="194,145,-194,55" Grid.RowSpan="2"/>
 
-            <Button Background="#2DA2EC"
-                    BorderBrush="#343F71" BorderThickness="2"
+            <Button Background="#2DA2EC" Content="?" FontSize="40" FontWeight="Bold"
+                    BorderBrush="#343F71" BorderThickness="2" Foreground="Orange"
                     HorizontalAlignment="Left" Margin="216,115,0,0" 
                     VerticalAlignment="Top" Height="60" Width="50">
-                <Image Source="C:\c#\LearningIncreaser\LearningIncreaser\questionMark.png"/>
                 <Button.ToolTip>
                     <ToolTip Content="Długość Pseudonimu musi być większa niż 1 oraz mniejsza niż 16"/>
                 </Button.ToolTip>
