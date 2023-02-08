@@ -20,7 +20,7 @@ namespace LearningIncreaser.Core
         /// </summary>
         public static void ReadWordsFromCSVFile()
         {
-            var plik = File.ReadAllLines(@"C:\c#\LearningIncreaser\SlowkaDoNauki.csv");
+            var plik = File.ReadAllLines(@"..\..\..\SlowkaDoNauki.csv");
 
             foreach (var line in plik)
             {

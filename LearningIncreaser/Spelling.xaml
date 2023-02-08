@@ -51,7 +51,7 @@
             </Button>
 
             <Button x:Name="LengthButton" Click="LengthButton_Click"
-                    Content="Length" FontSize="30" FontWeight="Bold"
+                    Content="Length" FontSize="25" FontWeight="Bold"
                     Grid.Column="1" Margin="20,0,10,170"
                     Background="Beige" FontFamily="Britannic Bold"
                     BorderBrush="Orange" BorderThickness="3" Foreground="Green">
